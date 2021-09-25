@@ -19,3 +19,25 @@ function twoSum( arr, target){
 // note that this isnt effiecient * big - o notation.
 // trying to work on ways to make it more efficient, I should be able to
 // make it work  with just one loop...
+
+
+// Remove Element
+// Given an integer array nums and an integer val,
+// remove all occurrences of val in nums in-place.
+// The relative order of the elements may be changed.
+
+
+var removeElement = function(nums, val) {
+  // so well loops through the array
+    for(var i = 0; i < nums.length; i++){
+      // console.log to make sure were going through the array
+        console.log(nums[i])
+        // created a conditional where if the index of nums is === to val
+        // then we will pop the value and shift null
+        if(nums[i] === val){
+            nums.pop()
+            nums.shift(null)
+            return
+        }
+    }
+};
