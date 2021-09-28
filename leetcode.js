@@ -66,3 +66,34 @@ var numIdenticalPairs = function (nums) {
   return pairs
 
 };
+
+// ***************************************************************************
+// Reverse String
+// Write a function that reverses a string. The input string is given as an array of characters s.
+// Input: s = ["h","e","l","l","o"]  \  Output: ["o","l","l","e","h"]
+// Input: s = ["H","a","n","n","a","h"] \ Output: ["h","a","n","n","a","H"]
+
+
+var reverseString = function(s) {
+
+  // I can set two variable to hold the first and the last
+    let first = 0
+    let last =  s.length -1
+
+
+    console.log("before: ", s)
+    // adding a conditional
+    while (first <= last){
+      // now with temp we can have that hold the 1st letter
+        let temp = s[first]
+        // well set first to last
+        s[first] = s[last]
+        // and temp to be the last since its originally the first letter
+        s[last] = temp
+        first++
+        last--
+    }
+
+    console.log("after: ", s)
+    return  s
+};
