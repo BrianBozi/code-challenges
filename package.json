@@ -1,0 +1,23 @@
+{
+  "name": "code-challenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "typescript": "^4.4.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrianBozi/code-challenges.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrianBozi/code-challenges/issues"
+  },
+  "homepage": "https://github.com/BrianBozi/code-challenges#readme"
+}

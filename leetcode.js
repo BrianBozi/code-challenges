@@ -3,7 +3,7 @@
 
 function twoSum( arr, target){
   // so first im going to for loop with the first index
-  for( let i = 0; i < arr.length; i++ ){
+  for( let i = 0; i < arr.length - 1; i++ ){
   // then we can do another for loop with the next index * i + 1
     for(let j = i + 1; j < arr.length; i++){
       // once were looping we can have a condition where if the two values add up to target
