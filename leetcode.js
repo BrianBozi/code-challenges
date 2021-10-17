@@ -97,3 +97,25 @@ var reverseString = function(s) {
     console.log("after: ", s)
     return  s
 };
+
+
+// Richest Customer Wealth Javascript solution
+var maximumWealth = function (accounts) {
+  let min = 0;
+  let max = 0;
+
+  for (let i = 0; i < accounts.length; i++) {
+    let len = accounts[i].length;
+    for (let x = 0; x < len; x++) {
+      max += accounts[i][x]
+    }
+    if (max > min) {
+      min = max;
+      max = 0
+    } else {
+      max = 0
+    }
+  }
+
+  return min
+};
