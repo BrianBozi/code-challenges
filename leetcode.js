@@ -100,6 +100,27 @@ var reverseString = function(s) {
 
 
 
+// Richest Customer Wealth Javascript solution
+var maximumWealth = function (accounts) {
+  let min = 0;
+  let max = 0;
+
+  for (let i = 0; i < accounts.length; i++) {
+    let len = accounts[i].length;
+    for (let x = 0; x < len; x++) {
+      max += accounts[i][x]
+    }
+    if (max > min) {
+      min = max;
+      max = 0
+    } else {
+      max = 0
+    }
+  }
+
+  return min
+
+
 // 1929. Concatenation of Array
 // Given an integer array nums of length n,
 // you want to create an array ans of length 2n where ans[i] == nums[i] and ans[i + n] == nums[i] for 0 <= i < n(0 - indexed).
@@ -111,4 +132,5 @@ var getConcatenation = function (nums) {
   // we can use .concat() to conact nums to the original nums array
   // so were just adding it on again
   return nums.concat(nums)
+
 };
