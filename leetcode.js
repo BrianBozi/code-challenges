@@ -134,3 +134,15 @@ var getConcatenation = function (nums) {
   return nums.concat(nums)
 
 };
+
+
+  var isPalindrome = function (x) {
+    // here we can have a variable hold the original number
+    const original = x;
+    // then we can use this to turn the number into a string, then split each
+    // index and then reverse the order and join the string
+    // then to turn it back to a number
+    const reverse = parseFloat(original.toString().split('').reverse().join('') * Math.sign(original))
+    //  here we check to see if they match
+    return original === reverse
+  };
