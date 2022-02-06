@@ -21,10 +21,19 @@
 // Explanation: F(4) = F(3) + F(2) = 2 + 1 = 3.
 
 
-
+// Recursion is when a function calls itself directly or in directly. Here we ar e calling fib(n) while in fib(n)
 
 function fib(n: number): number {
+  // this is our base condition
+  // In the recursive program, the solution to the base case is provided and the solution of the bigger problem is expressed in terms of smaller problems. -geek for geeks
     if(n > 2) return n
 
+
+    // here the base condiiton is check, if 0 or 1 itll just retun itself.
+    // if the n = 4 then itll excute as
+    // fib(4 - 2) + fib(4 - 1) = fib(3) + fib(2) = 2 + 1 = 3
     return fib(n - 2) + fib(n -1)
 };
+
+
+// * really good explanation of fibonacciNumber - https://www.youtube.com/watch?v=wTlw7fNcO-0
