@@ -19,3 +19,12 @@
 // Input: n = 4
 // Output: 3
 // Explanation: F(4) = F(3) + F(2) = 2 + 1 = 3.
+
+
+
+
+function fib(n: number): number {
+    if(n > 2) return n
+
+    return fib(n - 2) + fib(n -1)
+};
