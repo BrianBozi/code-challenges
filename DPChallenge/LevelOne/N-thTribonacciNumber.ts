@@ -17,3 +17,17 @@
 // Output: 1389537
 
 // -------------------
+
+
+function tribonacci(n: number): number {
+    let arr = [0, 1, 1, 2];
+        if (n <= 3) {
+    return arr[n];
+  } else {
+    for (let i = 3; i < n; i++) {
+      arr.push(arr[i] + arr[i - 1] + arr[i - 2]);
+    }
+  }
+  return arr[arr.length - 1];
+
+};
